@@ -1,0 +1,155 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1615.33333333333,921.333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="54">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="512.666666666667,808" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="470.666666666667,718" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="458.666666666667,494.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416.666666666667,404.666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NClick ClickType="Single" DisplayName="Click 'Restore'" sap:VirtualizedContainerService.HintSize="312,167.333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" Timeout="1">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="298, 201, 92, 41" ElementType="Button" FriendlyName="'Restore'" FullSelectorArgument="&lt;ctrl name='Restore pages?' role='dialog' /&gt;&lt;ctrl name='Restore' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Restore pages?' role='dialog' /&gt;&lt;ctrl name='Restore' role='push button' automationid='' check:fulltext='Restore' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAtCAYAAABRXm6KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOxSURBVHhe7Zu9bhNBFIV5DvMCVHTkCSJeIBXp6NIhESQKpNA4SEiEJlIKd1aKyErjwig0WAqSXURRGkeyICmQ5SIb4XjtJHb8l8M961l7l6xjEGsPxT3SV3h2Zjx7z+694599AJVVqQGWpQZYlhpgWZEGfCl38PTjTzx64yCxeqbEAGPJmDK2QYUM6A+Ad58uIydQ4uP93qUXaypkQOG0EzlAiZeHr87w9fvwTggZ8Cx1ETlAiR/GmgoZ8PjteWRnJX4YaypkQFRHZXZQaoBFKDXAIpQaYBFKDbAIpQZYhFIDLEKpARah1ACLUDM3IOOYyQNyG11kd/VTNzUnA/o4PGojK+SrfbTZ1O0ilYwe8+c0sVcboN3oYC3y+P8NNScDesgE2tZO+V3sAIVsuO/f08IJp2+pARO5a8A5UtVbaesjv23aknWkTs2dQbX6KOz738yeY6XYgdMyx3AL97SJRLYD17T48to5ZqOBrCN3hmlHd4CTUhOLozUY42od5GtcC3ByMG0d8UNZS0Fu9QpLXp+a9GEQGKQrvM61cNgwBu3I8VzH69+WYKVzDWyWenDFjcRWE+kjMUaOodtDXuZOZ2syXxMFz6xbVH4M33M4H+CUXbMuY4CoUmoYY6asw5xPnFAWirCknv0aFvw+OzdeEMfBEczV7ZTrSBz0vFFOaXwlLiT9An43BS0Uu8P+wfmSVzhkc7eDzQnjpq7Db4sRaq4paHG3jQoDwRP3C7AJcJS8lLIlwRrGVMb1UDjwr1hyN5CT6ks4FZpxvJP8PtPW4feLEWruNWC51Pfea3RS5sQrpTpWtsM83zJX+oaLdLkHxxjRlsAN01f8Bty7jpihLBTh5jAdSG7dS8lrv5hWr8dpKYikm3H7BfYa7PxbIIMpyE9ZE1LQenBc0IBp65gBlAUDzrB0NLwL2lKIF1Zd5L2gyl3h3CBTvEbm6AbHsrf3xkhA2Z7O1bEuu6FRCvPm8gvuAMclKfCSnhLJSUX4VnY6fh2JMGDaOmYAZcWAYOC8VLEhH6iC20ZuNSU4L9hXdkGuXwNErgQkvT1OCctSdP3tqFMWA9ieukJe5htJtpOHxXrgyo4yQLhvHTOAmrkBymQoNcAilBpgEUoNsAilBliEUgMsQqkBFqHUAItQaoBFKDXAIlTIAP17+vyI/Hu6PqAxPyIf0OBjM3x8JmqAEh+MMR8Ho0IGUMmcPqQ3az58vjTRjjCA+nbWw8tMA09Gv70q/wpjyZgytkFFGqCal4Bfkn7RkiuaseIAAAAASUVORK5CYII=" InformativeScreenshot="a3578846237d5229b5fc65821169d1ec.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Restore pages?' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Text="Restore" TextMethod="FullTextScrapping" TextSelector="&lt;ctrl role='push button' /&gt;" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="312,94" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[string.Format(&quot;Error&quot;)]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQZSURBVGhD7ZgJT+JAHEf9SPsBdxNvRUAO5fQ+P5AxcbPGLDFGQVA8snLz3/lNO+3QDqVlhmw2ockLLSby3nQo0y7Mt/k24+3y8pIuLi445+fndAbOzuj0FJzSyQk4oePjY87R0REdgsNDOgAHB7QP9vdpj1He2+OUymUqlcr4WzOVSn2zP878BvHBYBBI30vfxtnvu+/x/T4Nh0PC4FQqFYTNLkIE9Ho9TlfQdel0uxLsuMNeATtu2/vtdofvt/hrh0cg4OPjg37/ruCszCYC02YwGAYGdDUCPj8/6e3tje7u7jCtzEdgzk86AzoB7+/v1Gw26eXlhX7d3lKxWDIbgS/sLKcQ5F9fX6nRaFCtVqObm5+ULxTMReBqgwBHfKoAS95iNAAjX6/X6fn5marVKj0+PtL19TXl8nkzEbhU+gIk+UnTh2OPvioA4hh5If/w8ED39/d0dXVFuVyuaWtMv+E67wSMiFu48tMFJBKJsaQzWbI1pt/wI8UDPOKB8sAOwL53/vNjRo2N/lO1JlGlpyd2Jhj1eoNSmYx+AH5d/QGW4NgAduyMuDT63gAcj9KmVqtNX4xer0+ptNGA7hhxMHn0LYICmLwnYDud1g/A2gZLAr+0QC3Pgai9D8mwo+8EpFL6AViYqQM84qDrCvNLJxMbkY8YkNw2EcBWlFYAExYIYRlp5HEs5C3CyfsDtvUDsCTGKtInLLDPyDh5CEYdfRGQSJoIYGt5ZYBH3JK3Je3j0PJjAuLJpH4Abka83wFZGjijDuz3wskDv7wTkDARwO6icAZkYYF1NmxB6X2IRZGfaQBuA/1TyBWTxb3yfJ+LqlBPHTlgK57QD8D9K9YtjjDwSHvFJ488GC8PsHSPxeOmAtRTSMioxHXkAQ/YMhCApwc9dgbwwRAUrz7wvsSosMxk+a+vFl/9bm5tGQgola0ppJIGTCqcOLDkgwNa9EcExAwEFEsl/3dAgVpYwKRDybe5vAjYiMUMBBTHB6hlvbjyKuERbHkRsL5pIKBQLDrfgWiEH3WOJO8GbBoIKEQNsMU15J2ADQMB+UIhZMAU4kAhLwLW1jf0A3L5cQGSsCQdWhwoxAUIWDUTkLcDJFmPcCRpTitQHvCAtXX9gN0cC2DrEj1hCYWsCgSsmAnI8QClTCQmj7oMD1hd0w/Y2dUNiCYuQMCymYDdKQOmExfwgJVV/YDsTpQAS1pHXICAJTMBOwEBrrAJaRkesLyiH5DJIqA3ImpaVgUCFk0EpLNZ/s9UHzJL8Jk/lpYNBGT+8wA84sY/+xd8X1wyEJDO8KfEeNCKZ5V43IcnZnjohMceAE8PcAOOe1jcBuJOCjcjWM9jSYxVJRZmWNtgeYBfWPxI4TqPSyWuNvjCYs5j1AHkjQTMt/kWtC0s/AW5LGYfC1SkPgAAAABJRU5ErkJggg==" InformativeScreenshot="43df3a031bcd247c1e290ed6871d8c9e.png" Selector="&lt;html app='chrome.exe' title='New Tab'/&gt;" Url="chrome://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
